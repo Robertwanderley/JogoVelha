@@ -1,0 +1,122 @@
+/*resetar css*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+    text-align: center;
+}
+
+h1{
+    color: red;
+    font-size: 42px;
+}
+/* botoes do jogo*/
+
+#botoes_jogo button{
+    border: none;
+    padding: 10px 15px;
+    margin: 0px 10px;
+}
+/*tabela do jogo*/
+#container{
+    display: flex;
+    width: 300px;
+    margin: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+.box{
+    height: 100px;
+    border: 5px solid black;
+    box-sizing: border-box;
+    flex: 1 1 33%;
+}
+
+#bloco1,#bloco2,#bloco3{
+    border-top: none;
+}
+#bloco1,#bloco4,#bloco7{
+    border-left: none;
+}
+
+#bloco3,#bloco6,#bloco9{
+    border-right: none;
+}
+
+#bloco7,#bloco8,#bloco9{
+    border-bottom: none;
+}
+
+/* Marcadores */
+.x{
+    font-size: 65px;
+    color: red;
+    display: inline-block;
+    line-height: 100px;
+}
+
+.O{
+    width: 50px;
+    height: 50px;
+    border: 5px solid green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 17px;
+}
+
+/* Esconder marcadores*/
+
+.hide{
+    display: none !important;
+}
+
+/*Placar*/
+h2{
+    font-size: 33px;
+}
+
+#caixa_placar{
+    font-weight: bold;
+    margin-top: 30px;
+    font-size: 25px;
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+.placar{
+    margin:0 20px;
+}
+
+#marcador{
+    color: red;
+    margin-right: 3px;
+
+}
+#marcador2{
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border: 2px solid green;
+    border-radius: 50%;
+}
+/*mensagem de vitoria*/
+
+#mensagem{
+
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    top: 150px;
+    width: 500px;
+    font-size: 50px;
+    background-color: black;
+    color: white;
+    padding: 25px;
+
+}
